@@ -1,0 +1,45 @@
+//***FILE 969 is from Lionel Dyck in Austin, Texas and contains     *   FILE 969
+//*           the PDSEGEN ISPF application.                         *   FILE 969
+//*                                                                 *   FILE 969
+//*           github:  http://www.github.com/lbdyck                 *   FILE 969
+//*           email:  lbdyck@gmail.com                              *   FILE 969
+//*                                                                 *   FILE 969
+//*    File 969 contains the PDSEGEN ISPF application to exploit    *   FILE 969
+//*    the capabilities of using PDSE Version 2 member              *   FILE 969
+//*    generations.                                                 *   FILE 969
+//*                                                                 *   FILE 969
+//*    Lionel Dyck's large collection of utilities has now been     *   FILE 969
+//*    divided between Files 312, 313, 314, and 969.  All member    *   FILE 969
+//*    names beginning with A-R are on File 312.  Names beginning   *   FILE 969
+//*    with S-TS are on File 313.  Names from TX-Z are on File      *   FILE 969
+//*    314.                                                         *   FILE 969
+//*                                                                 *   FILE 969
+//*       NAME       VER.MOD   LAST MODIFIED     SIZE   ID          *   FILE 969
+//*       $$$DOC      01.28   2022/04/12 09:42    430 PDSE          *   FILE 969
+//*       $CHANGES    01.47   2024/08/14 09:41   1975 PDSE          *   FILE 969
+//*       $INSTALL    01.12   2020/02/02 11:02     76 PDSE          *   FILE 969
+//*       $MODULES    01.04   2018/03/19 10:52     63 PDSE          *   FILE 969
+//*       $MONITOR    01.00   2019/11/01 06:35     11 PDSE          *   FILE 969
+//*       $RECV       01.44   2019/11/01 06:36    150 PDSE          *   FILE 969
+//*       $RFES       01.01   2021/12/18 13:27      9 PDSE          *   FILE 969
+//*       $UNDOC      01.07   2020/01/26 08:22     16 PDSE          *   FILE 969
+//*       @ASMCLS     01.00   2020/03/09 12:35     38 PDSE          *   FILE 969
+//*       @BACKUP     01.00   2020/03/09 12:35    119 PDSE          *   FILE 969
+//*       ASM         01.00   2024/08/14 09:41   1501 XMIT          *   FILE 969
+//*       ASMJCL      01.00   2021/11/25 12:13     30 PDSE          *   FILE 969
+//*       CLS         01.00   2024/04/25 08:14      6 PDSE          *   FILE 969
+//*       EXEC        01.00   2024/08/14 09:41  12338 XMIT          *   FILE 969
+//*       FIXPDSEG    01.08   2021/11/25 12:33     27 PDSE          *   FILE 969
+//*       LICENSE     01.00   2016/06/10 13:52    674 PDSE          *   FILE 969
+//*       LOAD        01.00   2024/08/14 09:41    234 XMIT          *   FILE 969
+//*       PANELS      01.00   2024/08/14 09:41   7453 XMIT          *   FILE 969
+//*       PDSEGQW     01.08   2018/03/21 06:08    414 PDSE          *   FILE 969
+//*       PDSEPDF     05.56   2019/07/22 12:46  28543 PDF           *   FILE 969
+//*       PDSEREFC    01.02   2019/06/25 14:15   2403 PDF           *   FILE 969
+//*       QWLOAD      01.00   2018/03/20 13:15     22 PDSE          *   FILE 969
+//*       SAMPBR      01.09   2017/09/27 14:09     50 PDSE          *   FILE 969
+//*       SAMPCOPY    01.00   2016/10/27 13:30     48 PDSE          *   FILE 969
+//*       SAMPLE      01.00   2024/08/14 09:41   1188 XMIT          *   FILE 969
+//*       SUPPORT     01.02   2017/07/17 14:05     10 PDSE          *   FILE 969
+//*       WISHLIST    01.00   2018/03/26 14:16     12 PDSE          *   FILE 969
+//*                                                                 *   FILE 969

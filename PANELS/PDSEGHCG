@@ -1,0 +1,374 @@
+)Attr Default(Ý+¨)
+/* May not exceed 1023 records in the )AREA */
+/* Update using the GETPCHG edit macro for current updates */
+   ¨ type( input) intens(low ) just(left ) hilite(uscore) color(&clrw )
+   ` type(text) intens(low ) caps(off) just(asis ) color(&clrw)
+   ~ type(text) intens(low ) caps(off) just(asis ) color(&clrg)
+   Ý type(text) intens(high) color(&clrw)
+   + type(text  ) intens(low ) color(&clrt)
+     skip(on)
+   } area(SCRL) Extend(ON)
+)Body
+                     `Summary of Changes for PDSEGEN+
+ÝCommand ===>¨ZCMD                                                           +
+}help -------------------------------------------------------------------------}
+)Area Help
++
++The following is a list of the changes and enhancements that have been
++made to the~PDSEGEN+package.+
++
++~Version 6.3.2  Aug 14, 2024
++    - Exec changes
++      PDSEGEN  - Support 8 Character Userids
++
++~Version 6.3.1  Jan 04, 2024
++    - Exec changes
++      PDSEGEN  - Allow non-quoted fully qualified datasets on entry and
++                 change and add quotes if needed.
++
++~Version 6.3.0  Nov 26, 2023
++    - Panel changes
++      PDSEGHHW - update for Orphan command
++      PDSEGHN  - update for Orphan command
++      PDSEGHOR - update for Orphan command
++      PDSEGHPS - update for Orphan command
++      PDSEGH0  - update for Orphan command
++      PDSEGOPT - update for Orphan command
++
++~Version 6.2.9  Nov 25, 2023
++    - Exec changes
++      PDSEGEN  - Only display (toggle) orphan members with Orphan commands
++
++~Version 6.2.8  Nov 21, 2023
++    - Exec changes
++      PDSEGEN  - Correct bug in counting Ghosts
++
++~Version 6.2.7  Jul 09, 2023
++    - Exec changes
++      PDSEGEN  - Count Ghost members and report with Info command
++                 Members with no absolute generation of 0.
++
++~Version 6.2.6  Jun 20, 2023
++    - Exec changes
++      PDSEGEN  - The page count from dsinfo can contain a comma which
++                 causes the generated message after Prune to fail on the
++                 subtraction - fixed.
++
++~Version 6.2.5  Jun 17, 2023
++    - Exec changes
++      PDSEGEN  - Update page/%used after Prune and improve the prune
++                 message to reflect recovered pages/% used
++
++~Version 6.2.4  May 8, 2023
++    - Exec changes
++      PDSEGEN  - Remove some restrictions on using member delete
++
++~Version 6.2.3  May 4, 2023
++    - Exec changes
++      PDSEGEN  - Correctly display hit count (or not) if elapsed time
++                 display requested via set
++               - Allow K(lone) if genhide/limit active
++
++~Version 6.2.2  March 18, 2023
++    - Exec changes
++      PDSEGCPR - Correct Ignore 'x' if used on the compare -n command
++
++~Version 6.2.1  March 14, 2023
++    - Exec changes
++      PDSEGEN  - Use Parse Source instead of sysvar(sysicmd)
++               - Add new GEN On and GEN Off commands
++      PDSEGCPR - Ignore 'x' if used on the compare -n command
++    - Panel changes
++      PDSEGH0  - Add GEN On and GEN Off
++      PDSEGH17 - Add GEN On and GEN Off
++      PDSEGHPS - Add GEN On and GEN Off
++
++~Version 6.2.0  Jan 01, 2023
++    - Exec changes
++      PDSEGEN  - Adjust time calc on fast cpu set to
++                 0.0000000001 if 0 for ptcpu ptpcpu
++
++~Version 6.1.9  Nov 10, 2022
++    - Exec changes
++      PDSEGEN  - Add closing paren to member pattern for Copy
++
++~Version 6.1.8  Nov 10, 2022
++    - Exec changes
++      PDSEGEN  - Add DSORG to temp dataset allocation
++
++~Version 6.1.7  Nov 09, 2022
++    - Exec changes
++      PDSEGBAK - Properly initialize null variable
++      PDSEGCMD - Properly initialize null variable
++      PDSEGENM - Properly initialize null variable
++      PDSEGVER - Properly initialize null variable
++
++~Version 6.1.6  Nov 02, 2022
++    - Exec changes
++      PDSEGEN  - Improve restriction message if hide/limit active
++
++~Version 6.1.5  Nov 01, 2022
++    - Exec changes
++      PDSEGEN  - Add restrictions on selections if a date filter active
++
++~Version 6.1.4  Nov 01, 2022
++    - Exec changes
++      PDSEGEN  - Add FLip as an alias of Change
++               - Correct bug if elapsed time short msg so F1 displays long
++               - Restrict some selections if Hide/Limit active
++
++~Version 6.1.3  Oct 27, 2022
++    - Exec changes
++      PDSEGEN  - On Change if left quote used but right missing add it
++
++~Version 6.1.2  Oct 26, 2022
++    - Exec changes
++      PDSEGEN  - Find bug fix if maxgens > 0 but no gens found
++
++~Version 6.1.1  Oct 25, 2022
++    - Panel changes
++      PDSEGH0  - Correct tutorial for Limit
++
++~Version 6.1.0  Oct 25, 2022
++    - Exec changes
++      PDSEGEN  - If no generations in list the use SuperC for Find
++
++~Version 6.0.9  Oct 24, 2022
++    - Exec changes
++      PDSEGEN  - Improve Hide/Limit messaging
++
++~Version 6.0.8  Oct 23, 2022
++    - Exec changes
++      PDSEGEN  - Correct bug in FIND with nogen if no filter
++
++~Version 6.0.7  Oct 21, 2022
++    - Exec changes
++      PDSEGEN  - Correct bug in FIND if filter and nogens
++      PDSEGFND - Correct bug in FIND if filter and nogens
++
++~Version 6.0.6  Oct 14, 2022
++    - Exec changes
++      PDSEGEN  - Add LIMIT P (prompt)
++    - Panel changes
++      PDSEGASK - Update for LIMIT prompt
++      PDSEGEDA - Update for LIMIT prompt
++      PDSEGEDB - Update for LIMIT prompt
++      PDSEGEDC - Update for LIMIT prompt
++      PDSEGEDD - Update for LIMIT prompt
++      PDSEGEDE - Update for LIMIT prompt
++      PDSEGEDF - Update for LIMIT prompt
++      PDSEGEDG - Update for LIMIT prompt
++      PDSEGEDH - Update for LIMIT prompt
++
++~Version 6.0.5  Oct 13, 2022
++    - Exec changes
++      PDSEGEN  - Correct Edit max gen message if Limit used
++
++~Version 6.0.4  Oct 12, 2022
++    - Exec changes
++      PDSEGEN  - Add new LIMIT command
++    - Panel changes
++      PDSEGASK - Update for LIMIT
++      PDSEGHLM - Added for LIMIT
++      PDSEGHPS - Update for LIMIT
++      PDSEGH0  - Update for LIMIT
++      PDSEGOPT - Update for LIMIT
++
++~Version 6.0.3  Oct 6, 2022
++    - Exec changes
++      PDSEGEN  - Add + selection to open PDSEGEN in new ISPF Split
++    - Panel changes
++      PDSEGH0  - Make LP a point and shoot field
++      PDSEGH6  - Add + selection
++      PDSEGSLN - Add + selection
++      PDSEGSL0 - Add + selection
++
++~Version 6.0.2  Sept 20, 2022
++    - Exec changes
++      PDSEGEN  - Support elapsed time display option on set
++    - Panel changes
++      PDSEGSET - Add set elapsed time display option
++
++~Version 6.0.1  June 15, 2022
++    - Exec changes
++      PDSEGEN  - Correct Day calculation for since that I broke
++
++~Version 6.0.0  June 14, 2022
++    - Exec changes
++      PDSEGEN  - Fix typo of THURDAY to THURSDAY (sigh)
++
++~Version 5.0.0  December 1, 2017
++    - ASM/Load changes
++      PDSEGDEL  - Update to correctly delete from non-member generation
++                  PDS/PDSE datasets
++    - Exec changes
++      PDSEGEN    - Support for ? to be used for single character filter
++                 - Add Copy line selection
++                 - Change 1 char commands:
++                   C (Compare) becomes Z
++                   R (Recover) becomes G
++                   N (reName) becomes R
++                   C will now be COPy to new DS
++                   R will now be REName
++                 - Add MODEL command to allocate a new dataset
++                   syntax:  MODel new-dataset-name
++                 - Allow non-PDS/PDSE by calling ISPF 3.4 (DSLIST)
++                 - Support expanded line selection panels allowing
++                   9 character commands. Include support for optional
++                   info for some commands in the status field. Use
++                   left/right scrolling to change panels
++                 - Add expanded line commands
++                 - Allow any line selection to be a block command
++                   XX/XX or X99999
+                  - Expanded commands block by doubling the 1st
+                    character. No counts allowed however.
++                 - Correct initial sort order
++                 - Increase DSList from 16 to 25
++                 - Add Sort Descending to the Dataset List process
++                 - Add option (see PDSEGENS) to display the Changes
++                   tutorial panel when the version changes
++                 - Change HIGEN relative gen to - a - instead of
++                   x'ff'
++                 - Speed up HIGen off process
++      PDSEGBAK   - Update to support changed PDSEGENS return string
++      PDSEGCPR   - Update to support changed PDSEGENS return string
++      PDSEGENC   - Update to support changed PDSEGENS return string
++                 - Return return code 0 if copy successful
++                                      4 if not
++      PDSEGENS   - Update to support changed PDSEGENS return string
++      PDSEGRST   - Update to support changed PDSEGENS return string
++    - Panels changes
++      PDSEGDSL  - Add verification of entered dsname syntax
++                - Add SORTD (Sort Descending) option
++      PDSEGEXA  - New 8 character selection - 4 digit year
++      PDSEGEXT  - New 8 character selection - 2 digit year
++      PDSEGHEC  - Clarify that COMPare can be abbreviated to COMP
++      PDSEGHLR  - Update for 8 character selection panels
++      PDSEGH0   - Document block line commands
++                - Added optional Primary Command Summary (PS)
++                - Added Transfer (T) line selection command
++      PDSEGH15  - Add Transfer line selection command info
++      PDSEGH19  - Correction to REFresh short command from RE to REF
++      PDSEGH6   - Document block line commands
++                - Added Transfer (T) line selection command
++      PDSEGHPS  - Added Primary Command Summary
++      PDSEGSL0  - Added Transfer selection
++      *         - many other panels to document the expanded line
++                  commands
++
++~Version 4.0  August 19, 2016
++    - Exec changes
++      PDSEGEN    - Change Version to 4.0 due to the number of
++                   enhancements
++                 - If Filter in place use for Copy
++                 - Add QUIT and EXIT as commands
++                 - Add C ? option for a list of 15 previous
++                   datasets or C nn to get directly to entry nn
++                 - Improve test of invalid dsn
++                 - Allow a filter on the C (change) command
++                 - Reset Delete Prompt after each group of deletes
++                 - Change default Selection opt to /
++                 - Allow option to be passed on PRUNE command
++                 - Message if Filter with blank
++                 - Added U for user command
++                 - Added K (clone) option to clone a member
++                   ** generations are NOT cloned
++                 - Correction if Edit is canceled on new member to
++                   not update the row with last option.
++                 - If selection is O or / then display panel PDSEGSLN
++                   or PDSEGSL0
++                 - Correction for ghost member appearing in table
++                   after del
++                 - Correction for members/gens with no stats
++                   *Major Bug Fix*
++                 - Reset table title row after Prune Reset if Filter
++                   was on
++                 - Fix rename issue with just recovered member
++                 - Fix so multiple line commands can be
++                   selected at once
++                 - Clean up of last used option
++                 - Process PDSEGENS new option of clean for Validate
++      PDSEGENC   - Correction for copy count due to ghosts not
++                   copying
++      PDSEGENS   - Update to add Clean option (see PDSEGVAL)
++      PDSEGBAK   - Correction for members/gens with no stats
++                   *Major Bug Fix*
++                 - Add Control Errors Return for testing members
++                   to see if they are ghosts
++                 - Add Batch option for online scripting
++      PDSEGVAL   - Add parm option of clean to force clean up of
++                   pending deletes.
++                   See APARs OA47755 and OA50214.
++    - Misc changes
++      SAMPLE     - A sample backup of a PDSE for testing and
++                   demonstration purposes in TSO Transmit format
++      $RECV      - Update to restore SAMPLE backup PDS from TSO
++                   Transmit format.  The user must use PDSEGEN
++                   to restore to real PDSE.
++    - Panel changes
++      PDSEGH*    - Changed command line from Selection to Command
++      PDSEG*     - Added/corrected the help panel for numerous panels
++      PDSEGENT   - Typo correction
++                 - add K (clone) option
++      PDSEGCL    - Klone prompt
++      PDSEGENP   - Add / as a selection option
++      PDSEGHAU   - Update version
++      PDSEGHCG   - change history
++      PDSEGDEL   - updated
++      PDSEGDSL   - added for dataset selection list
++      PDSEGHD    - typo correction
++      PDSEGHU    - typo correction and add info on Compuware's Topaz
++      PDSEGH0    - several updates
++      PDSEGH11   - updated for C (change) updates
++      PDSEGH13   - new tutorial panel for select/edit commands
++      PDSEGH14   - new tutorial panel for Line Selection prompting
++      PDSEGH15   - new tutorial panel for Klone
++      PDSEGH16   - new tutorial panel for User command
++      PDSEGH8    - update tutorial for / set option
++      PDSEGHPD   - Added with doc on IEBPDSE
++      PDSEGRM    - define cursor location
++      PDSEGSET   - Add / as a selection option and make point and shoot
++      PDSEGSLN   - added
++      PDSEGSL0   - added
++      PDSEGUC    - Added for user command
++
++~Version 3.00  July 19, 2016
++    - Exec changes
++      PDSEGEN   - Update to use replace instead of cut/paste
++                - Add Backup and Restore commands
++      PDSEGENC  - Update to use replace instead of cut/paste
++      PDSEGBAK  - Update to use replace instead of cut/paste
++                - Enhance the reporting to include relative generation
++      PDSEGENM  - Add Replace option
++    - Panel changes
++      PDSEGBAK  - updated
++      PDSEGHAU  - update version
++      PDSEGHBJ  - Added sample batch backup/restore jcl
++      PDSEGHBR  - updated
++      PDSEGHC   - update sample copy jcl tutorial
++      PDSEGHCG  - update change history
++      PDSEGH0   - updated to add Backup and Restore commands and reorder
++      PDSEGH3   - updated
++    - Other changes
++      SAMPBR     - added sample batch JCL to backup and restore
++      SAMPCOPY   - updated sample JCL with refinements
++
++ ~Version 2.0   June 21, 2016+
++     - Major update to use Greg Price's update to the Xephon
++       PDSEINFO routine - renamed to PDSEGENI. This routine extracts
++       PDSE V2 member and generation information using DESERV into
++       REXX stem variables. This made the application much faster and
++       exposed ghost members.
++
++ ~Version 1.0   June 13, 2016+
++     - first general release to selected testers
++
++ ~Version 0.1   May 26, 2016 +
++     - initial creation of this exec using information from Thomas
++       Reed's SHARE presentation
+)Init
+&zup = PDSEGH0
+)Proc
+)End
+/* Copyright (c) 2019-2022 by Lionel B. Dyck */
+/* GNU GENERAL PUBLIC LICENSE V3        */

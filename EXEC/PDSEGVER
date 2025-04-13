@@ -1,0 +1,30 @@
+/* --------------------  rexx procedure  -------------------- */
+ ver = '6.3.2'
+ return ver
+/* Name:      PDSEGVER                                        |
+ |                                                            |
+ | Function:  Set the version for PDSEGEN elements            |
+ |                                                            |
+ | Syntax:    ver = pdsegver()                                |
+ |                                                            |
+ | Usage Notes: called by pdsegen elements                    |
+ |                                                            |
+ | Author:    Lionel B. Dyck                                  |
+ |                                                            |
+ | History:  (most recent on top)                             |
+ |            08/14/24 - 6.3.2 - Reflect updates to package   |
+ |            01/04/24 - 6.3.1 - Reflect updates to package   |
+ |            11/26/23 - 6.3.0 - Reflect updates to package   |
+ |            11/21/23 - 6.2.8 - Reflect updates to package   |
+ |            07/09/23 - 6.2.7 - Reflect updates to package   |
+ |            06/20/23 - 6.2.6 - Reflect updates to package   |
+ |            06/17/23 - 6.2.5 - Reflect updates to package   |
+ |            05/08/23 - 6.2.4 - Reflect updates to package   |
+ |            05/04/23 - 6.2.3 - Reflect updates to package   |
+ |            03/18/23 - 6.2.2 - Reflect updates to package   |
+ |            03/10/23 - 6.2.1 - Reflect updates to package   |
+ |            01/01/23 - 6.2.0 - Reflect updates to package   |
+ |            11/23/22 - 6.1.9 - Reflect updates to package   |
+ |            08/03/20 - 5.8.0 - Reflect updates to package   |
+ |                                                            |
+ * ---------------------------------------------------------- */
